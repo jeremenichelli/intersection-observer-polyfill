@@ -1,8 +1,8 @@
 ## IntersectionObserver Polyfill
 
-The IntersectionObserver API allows the developer to detect the intersection between a DOM element and the viewport or another **root** reference element.
+The IntersectionObserver API allows the developer to detect the intersection between a DOM elements and a **root** reference element or the viewport.
 
-**Beware! This is under development and doesn't cover all possible uses of the defin API. Feel free to contribute to make it better.**
+**_BEWARE! This is still under development and doesn't cover all possible uses. Feel free to contribute!_**
 
 You can see it working in this sample page built by [Wilson Page][1].
 
