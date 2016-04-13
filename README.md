@@ -17,8 +17,8 @@ Read the draft, fork this repo and help... there's a lot of stuff to do here yet
 - Add support for intersection ratio under **threshold** option
 - Add proper **this** context inside callback exposing **root** and **rootMargin** observer
 - Support **root** element different from viewport
-- ~Support **unobserve** method~
-- ~Support **disconnect** method~
+- ~~Support **unobserve** method~~
+- ~~Support **disconnect** method~~
 - Support **takeRecords** method
 - Complete properties present in callback's context argument
   - ~~boundingClientRect~~
@@ -35,8 +35,11 @@ Read the draft, fork this repo and help... there's a lot of stuff to do here yet
 This polyfill was tested in:
 
 - **Chrome 49**
+- **Chrome Mobile 49**
 - **Firefox 45**
 - **Safari 9**
+- **iOS Safari 9**
+- **Microsoft Edge**
 
 
 [1]: https://github.com/wilsonpage
