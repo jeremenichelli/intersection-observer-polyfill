@@ -1,0 +1,26 @@
+{
+  "name": "intersection-observer-polyfill",
+  "version": "0.0.2",
+  "description": "Polifyll for IntersectionObserver API",
+  "main": "intersection-observer-polyfill.js",
+  "scripts": {
+    "test": "eslint ./*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremenichelli/intersection-observer-polyfill.git"
+  },
+  "keywords": [
+    "IntersectionObserver",
+    "polyfill"
+  ],
+  "author": "Jeremias Menichelli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeremenichelli/intersection-observer-polyfill/issues"
+  },
+  "homepage": "https://github.com/jeremenichelli/intersection-observer-polyfill#readme",
+  "devDependencies": {
+    "eslint": "^2.7.0"
+  }
+}
