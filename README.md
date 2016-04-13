@@ -4,7 +4,7 @@ The IntersectionObserver API allows the developer to detect the intersection bet
 
 **_BEWARE! This is still under development and doesn't cover all possible uses. Feel free to contribute!_**
 
-You can see it working in this sample page built by [Wilson Page][1].
+You can see it working in [this sample page][3] built by [Wilson Page][1].
 
 For more insight read [the official WICG draft][2].
 
@@ -17,8 +17,8 @@ Read the draft, fork this repo and help... there's a lot of stuff to do here yet
 - Add support for intersection ratio under **threshold** option
 - Add proper **this** context inside callback exposing **root** and **rootMargin** observer
 - Support **root** element different from viewport
-- ~~Support **unobserve** method~~
-- ~~Support **disconnect** method~~
+- ~Support **unobserve** method~
+- ~Support **disconnect** method~
 - Support **takeRecords** method
 - Complete properties present in callback's context argument
   - ~~boundingClientRect~~
@@ -41,3 +41,4 @@ This polyfill was tested in:
 
 [1]: https://github.com/wilsonpage
 [2]: https://wicg.github.io/IntersectionObserver/
+[3]: https://jeremenichelli.github.io/intersection-observer-polyfill/example
