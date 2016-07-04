@@ -35,24 +35,23 @@
      * @param {Object} options
      */
     var IntersectionObserver = function(callback, options) {
+        var that = this;
+
         // throw error if callback is not a funciton
         if (typeof callback !== 'function') {
             throw new TypeError(constructError + 'The callback provided as parameter 1 is not a function');
         }
 
-        // default options object properties
-        var config = options || {
-            root: null,
-            threshold: [ 0 ]
-        };
+        this.root = options.root || null;
+        this.threshold = options.threshold || [0];
 
         // accept number as threshold option
-        if (typeof config.threshold === 'number') {
-            config.threshold = [ config.threshold ];
+        if (typeof this.threshold === 'number') {
+            this.threshold = [ this.threshold ];
         }
 
         // throw error when threshold value is out of range
-        if (config.threshold[0] > 1 || config.threshold[0] < 0) {
+        if (this.threshold[0] > 1 || this.threshold[0] < 0) {
             throw new RangeError(constructError + 'Threshold values must be between 0 and 1');
         }
 
@@ -85,8 +84,8 @@
                 }
             }
 
-            // execute callback with array of changes
-            callback(changes);
+            // execute callback with array of changes and reference to the observer
+            callback.apply(that, [changes, that]);
 
             // clean variables to prevent memory leaks
             arr = count = changes = el = rect = null;
