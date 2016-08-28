@@ -1,4 +1,6 @@
-## IntersectionObserver Polyfill
+## Intersection Observer Polyfill
+
+**IMPORTANT:** I'm not going to work on this polyfill since the WICG repository contains another one closest and more up-to-date according to the officla spec. I recommend using that one: https://github.com/WICG/IntersectionObserver/tree/gh-pages/polyfill
 
 The IntersectionObserver API allows the developer to detect the intersection between a DOM elements and a reference element or the viewport.
 
